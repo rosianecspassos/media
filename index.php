@@ -46,9 +46,8 @@ $p1 = $_REQUEST['peso1'] ?? 0;
 $p2 = $_REQUEST['peso2'] ?? 0; 
 
 $media=($val1 + $val2) / 2;
-$mp1 = $val1 * $p1; 
-$mp2=$val2 * $p2; 
-$mp = $mp1 + $mp2; 
+$mp= ($val1 * $peso1 + $val2 * $peso2)/($peso1 + $peso2);
+                                        
 print "A média simples entre $val1 e $val2 é $media e a média ponderada entre eles é $mp";
 ?>
 </div>
